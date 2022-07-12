@@ -1,0 +1,53 @@
+#div1{
+    background-image: linear-gradient(to right,rgba(3, 3, 69, 0.7),rgba(95, 95, 238, 0.7));
+    position: relative;
+    width: 700px;
+    border-radius: 10px;
+    border:10px solid rgba(44, 9, 96, 0.5);
+    box-shadow: 5px 10px 10px 10px rgb(229, 195, 212);
+
+
+}
+h1{
+    height: 50px;
+    width: 300px;
+    background-color: blue;
+    border: 2px solid black;
+    color: #fff;
+    border-radius: 5px;
+}
+small{
+    font-size:10px;
+    color: red;
+}
+h1:hover{
+    background-color: green;
+    color: yellow;
+}
+form{
+    font-family: Imprint MT Shadow;
+    font-size: 23px;
+    color: #fff;
+}
+input[type=text],input[type=number],input[type=email]{
+    height: 20px;
+    width: 400px;
+    border: 2px solid rgba(44, 9, 96, 0.5);
+    
+}
+#s{
+    height: 30px;
+    width: 150px;
+    border: 3px solid rgba(44, 9, 96, 0.5);
+    color: rgb(44, 9, 96);
+    font-family:Imprint MT Shadow;
+    font-size: 20px;
+    float: center;
+    border-radius: 5px;
+
+}
+#s:hover{
+    border: 3px solid rgb(44, 9, 96);
+    box-shadow:2px 3px 5px 3px rgb(212, 209, 221);
+}
+
