@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FormStyles.css">
+   <script type="text/javascript" src="formjavascript.js"></script>
+    <title>F1H2O Registration</title>
+    <style>
+        .container{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1500;
+            animation: animate 16s ease-in-out infinite;
+            background-size: cover;
+        }
+        @keyframes animate{
+            0%,100%{
+                background-image: url(2.jpg);
+            }
+            25%{
+                background-image: url(3.jpg);
+            }
+            50%{
+                background-image: url(4.jpg);
+            }
+            75%{
+                background-image:url(3.jpg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <center><div id="div1"><h1><u>F1H2O</u><small>RGUKT</small></h1>
+        <form action="success.html" method="post" onsubmit=" return valid();">
+        <table>
+            <tr><td>Name Of the USER:</td><td><input type="text" id="nm" class="n">
+                <label style="visibility: hidden;color: red;" id="label">Invalid...!</label>
+            </td></tr>
+
+            <tr><td>Email:</td><td><input type="email" id="eml">
+                <label style="visibility: hidden;color: red;" id="label">Invalid...!</label>
+            </td></tr>
+
+            <tr><td colspan="2">This registration form can be used by Indian or USA:</td></tr>
+            <tr><td colspan="2">India:<input type="radio" name="I" id="ind">USA:<input type="radio" name="I" id="usa">
+            <label style="visibility:hidden;color: red;" id="us">Enter number in USA format</label>
+            <label style="visibility:hidden;color: red;" id="in">Enter number in Indian format & 10 digits only</label></td></tr>
+            <tr><td>Mobile Number:</td><td><input type="number" id="pn"></td></tr>
+
+
+            <tr><td>Country:</td><td>
+                <fieldset>
+                    <legend>Select Any One:</legend>
+                <input type="radio"  name="c1"  checked>India
+                <input type="radio"   id="america"name="c1" checked >America
+                <input type="radio"  id="england"name="c1" checked>England
+                <input type="radio" id="germany" name="c1" checked>Germany
+                <input type="radio"  name="c1" checked >RGUKT
+            </fieldset>
+            </td></tr>
+            <tr><td>Payment Type:</td><td>
+                DD Method:<input type="radio" name="DD method" id="dd">A/C Number:<input type="radio" name="A/C Method" id="ac">
+        
+            </td></tr>
+    
+            <tr><td>Number:</td><td><input type="text" id="pay"></td></tr>
+            <tr><td>Type of Accommodation:</td><td>
+                <fieldset>
+                    <legend>Hotels:</legend>
+                <input type="radio"  name="c1" id="nuz">Nuzvid
+                <input type="radio"  name="c1" id="kadapa">Kadapa
+                <input type="radio" name="c1" id="sklm">SKLM
+                <input type="radio"  name="c1" id="ong">Ongol
+            </fieldset>
+        </td></tr>
+        <tr><td></td><td>
+            <fieldset>
+                <legend>Services:</legend>
+            <input type="checkbox"  >Break fast
+            <input type="checkbox"  >Lunch
+            <input type="checkbox"  >Snacks
+            <input type="checkbox"  >Tea
+            <input type="checkbox"  >Coffee
+            <input type="checkbox"  >Eggs
+        </fieldset>
+    </td></tr>
+    <tr><td>No.of Days Staying:</td><td><input type="number" id="sn"></td></tr>
+    <tr><td>Rent:</td><td><input type="text" id="rent"></td></tr>
+    <tr><td></td><td><input type="submit" id="s" value="Register"></td></tr>
+
+        </table>
+        </form>
+        </div>
+        </center>
+    </div>
+<script>
+    var nm=document.getElementById("nm");
+    nm.addEventListener('keyup',namec);
+</script>
+    
+</body>
+</html>
